@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjetoAndroid</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_Search">Search</string>
+    <string name="action_Add">New</string>
+    <string name="title_activity_activity2">Activity2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_activity3">Activity3</string>
+    <string name="title_activity_filtro100">Filtro100</string>
+    <string name="title_activity_f100">F100</string>
+
+</resources>
