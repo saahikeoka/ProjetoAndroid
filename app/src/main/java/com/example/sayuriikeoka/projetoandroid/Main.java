@@ -16,11 +16,11 @@ import android.widget.Toast;
 import java.lang.reflect.Field;
 
 
-public class Main extends ActionBarActivity {
+public class Main extends ActionBarActivity implements AdapterView.OnItemClickListener {
 
     ListView listView;
     ArrayAdapter<String> adapter;
-    String[] filtros = {"Filtro 100", "Filtro 200", "Filtro 300", "Filtro 400"};
+    String[] filtros = {"Filter 100", "Filter 200", "Filter 300", "Filter 400"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Main extends ActionBarActivity {
 
         listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, filtros));
-        listView.setOnClickListener((View.OnClickListener) this);
+        listView.setOnItemClickListener(this);
 
     }
 
@@ -72,7 +72,7 @@ public class Main extends ActionBarActivity {
         } else if(id == R.id.action_Search){
 
             return true;
-        } else if(id == R.id.action_new){
+        } else if(id == R.id.action_Add){
             Intent intent = new Intent(this, Activity2.class);
             startActivity(intent);
             return true;

@@ -9,7 +9,7 @@
         android:icon="@mipmap/ic_action_search"
         app:showAsAction="ifRoom" />
 
-    <item android:id="@+id/action_new"
+    <item android:id="@+id/action_Add"
         android:title="@string/action_Add"
         android:orderInCategory="100"
         app:showAsAction="never" />

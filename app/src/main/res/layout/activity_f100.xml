@@ -11,61 +11,77 @@
 
     <TextView
         android:id="@+id/entrada1"
-        android:text="Tomada 1"
-        android:layout_alignBaseline="@id/togglebutton1"
+        android:text="Socket 1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
 
     <ToggleButton
         android:id="@+id/togglebutton1"
         android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/entrada1"
+        android:textOff="Off"
+        android:textOn="On"
+        android:background="@color/Gray"
         android:onClick="onToggleClicked"/>
 
     <TextView
         android:id="@+id/entrada2"
-        android:text="Tomada 2"
-        android:layout_alignBaseline="@id/togglebutton2"
+        android:text="Socket 2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrada1"
+        android:layout_marginTop="40dp"/>
 
     <ToggleButton
         android:id="@+id/togglebutton2"
         android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:onClick="onToggleClicked"
-        android:layout_below="@id/togglebutton1"/>
+        android:layout_alignBaseline="@id/entrada2"
+        android:textOff="Off"
+        android:textOn="On"
+        android:background="@color/Gray"
+        android:onClick="onToggleClicked"/>
 
     <TextView
         android:id="@+id/entrada3"
-        android:text="Tomada 3"
-        android:layout_alignBaseline="@id/togglebutton3"
+        android:text="Socket 3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrada2"
+        android:layout_marginTop="40dp"/>
 
     <ToggleButton
         android:id="@+id/togglebutton3"
         android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:onClick="onToggleClicked"
-        android:layout_below="@id/togglebutton2"/>
+        android:layout_alignBaseline="@id/entrada3"
+        android:textOff="Off"
+        android:textOn="On"
+        android:background="@color/Gray"
+        android:onClick="onToggleClicked"/>
 
     <TextView
         android:id="@+id/entrada4"
-        android:text="Tomada 4"
-        android:layout_alignBaseline="@id/togglebutton4"
+        android:text="Socket 4"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entrada3"
+        android:layout_marginTop="40dp"/>
 
     <ToggleButton
         android:id="@+id/togglebutton4"
         android:layout_alignParentRight="true"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:onClick="onToggleClicked"
-        android:layout_below="@id/togglebutton3"/>
+        android:layout_alignBaseline="@id/entrada4"
+        android:textOff="Off"
+        android:textOn="On"
+        android:background="@color/Gray"
+        android:onClick="onToggleClicked"/>
 
 </RelativeLayout>

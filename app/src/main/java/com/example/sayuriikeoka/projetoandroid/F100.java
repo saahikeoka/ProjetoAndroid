@@ -18,21 +18,71 @@ public class F100 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_f100);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle ("Filtro 100");
+        setTitle ("Filter 100");
 
-        ToggleButton toggle = (ToggleButton) findViewById(R.id.togglebutton);
-        toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+        ToggleButton toggle1 = (ToggleButton) findViewById(R.id.togglebutton1);
+        toggle1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
         @Override
                 public void onCheckedChanged (CompoundButton buttonView, boolean isChecked){
             if (isChecked){
-                Toast.makeText(getApplicationContext(), "Tomada ativada", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Socket 1 enabled", Toast.LENGTH_LONG).show();
+                buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.DodgerBlue));
+                buttonView.setTextColor(F100.this.getResources().getColor(R.color.White));
             }else{
-                Toast.makeText(getApplicationContext(), "Tomada desativada", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Socket 1 disabled", Toast.LENGTH_LONG).show();
+                buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.Gray));
+                buttonView.setTextColor(F100.this.getResources().getColor(R.color.Black));
             }
-
         }
         });
 
+        ToggleButton toggle2 = (ToggleButton) findViewById(R.id.togglebutton2);
+        toggle2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged (CompoundButton buttonView, boolean isChecked){
+                if (isChecked){
+                    Toast.makeText(getApplicationContext(), "Socket 3 enabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.DodgerBlue));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.White));
+                }else{
+                    Toast.makeText(getApplicationContext(), "Socket 2 disabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.Gray));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.Black));
+                }
+            }
+        });
+
+        ToggleButton toggle3 = (ToggleButton) findViewById(R.id.togglebutton3);
+        toggle3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged (CompoundButton buttonView, boolean isChecked){
+                if (isChecked){
+                    Toast.makeText(getApplicationContext(), "Socket 3 enabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.DodgerBlue));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.White));
+                }else{
+                    Toast.makeText(getApplicationContext(), "Socket 3 disabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.Gray));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.Black));
+                }
+            }
+        });
+
+        ToggleButton toggle4 = (ToggleButton) findViewById(R.id.togglebutton4);
+        toggle4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener(){
+            @Override
+            public void onCheckedChanged (CompoundButton buttonView, boolean isChecked){
+                if (isChecked){
+                    Toast.makeText(getApplicationContext(), "Socket 4 enabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.DodgerBlue));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.White));
+                }else{
+                    Toast.makeText(getApplicationContext(), "Socket 4 disabled", Toast.LENGTH_LONG).show();
+                    buttonView.setBackgroundColor(F100.this.getResources().getColor(R.color.Gray));
+                    buttonView.setTextColor(F100.this.getResources().getColor(R.color.Black));
+                }
+            }
+        });
     }
 
     public void onToggleClicked(View view) {
@@ -44,7 +94,6 @@ public class F100 extends ActionBarActivity {
             // Disable
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,7 +110,7 @@ public class F100 extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-       if (id == R.id.action_settings) {
+       if (id == R.id.action_Search) {
             Intent intent = new Intent(this, Activity3.class);
             startActivity(intent);
             return true;

@@ -2,8 +2,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.sayuriikeoka.projetoandroid.F100">
-    <item android:id="@+id/action_settings" android:title="@string/action_settings"
-        android:orderInCategory="100" app:showAsAction="never" />
 
     <item android:id="@+id/action_Search"
         android:title="@string/action_Search"
@@ -12,12 +10,12 @@
         app:showAsAction="ifRoom" />
 
     <item android:id="@+id/action_enable"
-        android:title="@string/action_Add"
+        android:title="@string/Disable_All"
         android:orderInCategory="100"
         app:showAsAction="never" />
 
     <item android:id="@+id/action_disable"
-        android:title="@string/action_settings"
+        android:title="@string/Enable_All"
         android:orderInCategory="100"
         app:showAsAction="never" />
 

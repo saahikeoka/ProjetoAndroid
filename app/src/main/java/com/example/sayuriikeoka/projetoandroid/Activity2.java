@@ -13,7 +13,7 @@ public class Activity2 extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity2);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        setTitle ("New");
+        setTitle ("New filter");
 
 
     }
