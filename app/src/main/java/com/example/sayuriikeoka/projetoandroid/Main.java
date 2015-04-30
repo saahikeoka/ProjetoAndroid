@@ -27,6 +27,9 @@ public class Main extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.mipmap.ic_white_balance_incandescent);
+
         listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, filtros));
         listView.setOnClickListener((View.OnClickListener) this);
